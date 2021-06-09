@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <title>学习分析系统</title>
+</head>
+<body>
+    <h1>
+        登录<br/>
+    </h1>
+    <form action = "index/" method="post">
+        {%csrf_token%}
+        <label>用户名：</label><input name = 'uname'/><br/>
+        <label>密码：&nbsp&nbsp&nbsp</label><input name = 'pword'/><br/>
+        <input type = 'submit' value="登录"/>
+
+    </form>
+</body>
+</html>
