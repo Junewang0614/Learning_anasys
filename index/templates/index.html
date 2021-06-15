@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>首页</title>
+</head>
+<body>
+   <p>欢迎您，{{request.session.username}}</p>
+   <a href="{% url 'grade_analyse' %}">点击此处进行学习成绩分析</a> <br><br>
+   <a href="{% url 'chatflow_analyse' %}">点击此处进行对话流分析</a>
+</body>
+</html>
